@@ -29,7 +29,7 @@ import { EffectComposer } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examp
 import { RenderPass } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/postprocessing/UnrealBloomPass.js';
 import { OutputPass } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/postprocessing/OutputPass.js';
-const SOCKET_URL = new URLSearchParams(location.search).get('server') || 'https://TU-SERVIDOR-RENDER.onrender.com';
+const SOCKET_URL = new URLSearchParams(location.search).get('server') || 'https://hex-a-goon.onrender.com';
 const socket=io(SOCKET_URL,{autoConnect:false,transports:['websocket','polling']});
 let mp={connected:false,room:null,host:false,started:false,players:new Map(),lastSend:0};
 const mpStatus=()=>document.getElementById('mpStatus');
